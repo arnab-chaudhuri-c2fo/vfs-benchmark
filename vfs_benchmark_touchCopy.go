@@ -11,7 +11,7 @@ import (
 
 func TouchCopyAWS(localFilePath string, localFileName string,
 	remoteBucket string, remoteFilePath string,
-	remoteFileName string, s3Creds S3_Creds, fileBufferSize int){
+	remoteFileName string, s3Creds *S3_Creds, fileBufferSize int){
 
 	options := s3.Options{
 		AccessKeyID: s3Creds.accessKeyID,
